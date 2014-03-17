@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>Send mail form sample</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id='contactform' action="sendmail.php" method="post" target='ifrm'>
+      <input id="name" placeholder="نام" type="text" name="name" />
+      <input id="mail" placeholder="ایمیل" type="text" name="mail" />
+      <br/>
+      <textarea id="msg" placeholder="پیام شما ... " name="msg" cols="40" rows="7" ></textarea>
+      <br/>
+      <input type="submit" value="ارسال" name="send" class="fg-bgc" />
+      <span class="corner submit fg-bdc"></span>
+    </form>
+    <div id="reciveddata">
+      <iframe id='ifrm' name='ifrm'></iframe>
+    </div>
+  </div>
+</body>
+</html>
