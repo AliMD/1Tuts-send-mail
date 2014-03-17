@@ -15,4 +15,17 @@ body{
   border: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+}
+
+#reciveddata.open{
+  -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+       -o-transition: all 500ms;
+          transition: all 500ms;
+}
+#reciveddata.close{
+  height: 0;
+  opacity: 0;
 }
